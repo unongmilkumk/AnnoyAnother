@@ -1,0 +1,9 @@
+name: AnnoyAnother
+main: Main
+version: 1.0.0
+
+commands:
+  annoy:
+    description: Command to Annoy
+    usage: /annoy <player> <action> <behave>
+    aliases: ann
