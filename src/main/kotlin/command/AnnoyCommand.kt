@@ -16,7 +16,7 @@ class AnnoyCommand : CommandExecutor {
             val behave = args[2]
 
             if (Bukkit.getPlayer(action) != null) {
-                target = Bukkit.getPlayer(args[1])!!
+                target = Bukkit.getPlayer(nickname)!!
             }
             when(action) {
                 "shift" -> {
@@ -42,6 +42,12 @@ class AnnoyCommand : CommandExecutor {
                     } else if (behave == "down") {
                         target.isSwimming = true
                     }
+                }
+                "drop" -> {
+                    target.dropItem(true)
+                }
+                "attack" -> {
+                    target.attack(target)
                 }
             }
         }

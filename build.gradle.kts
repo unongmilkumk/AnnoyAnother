@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "1.5.21"
 }
 group = "com.unongmilk"
-version = "1.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
