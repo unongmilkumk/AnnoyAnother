@@ -14,13 +14,8 @@ class AnnoyTabComplete : TabCompleter {
             }
             return ret
         } else if (args.size == 2) {
-            val ret = arrayListOf("shift", "sprint", "jump", "swimming", "drop", "attack")
+            val ret = arrayListOf("jump", "drop", "attack", "openinv")
             return ret.toMutableList()
-        } else if (args.size == 3) {
-            val up = arrayListOf("shift", "sprint", "swimming")
-            if (up.contains(args[2])) {
-                return arrayListOf("up", "down").toMutableList()
-            }
         }
         return null
     }
